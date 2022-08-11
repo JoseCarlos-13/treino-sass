@@ -1,0 +1,70 @@
+// as variáveis em sass, são definidas com cifrão($). Para separar os seus nomes, usa-se - ou _
+$branco: white;
+$amarelo: yellow;
+$bolas: ".balls";
+$bola: ".ball", ".ball2", ".ball3";
+$borda: "border";
+$espaço-interno: "padding";
+$largura: "width";
+$cor-de-fundo: "background-color";
+
+.main-div {
+  background-color: purple;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+
+  section {
+    border: {
+      top: 1px solid $branco;
+      left: 1px solid $branco;
+      right: 1px solid $branco;
+      bottom: 1px solid $branco;
+    }
+    padding: 100px 150px 100px 150px;
+  }
+
+  h1 {
+    text-decoration: underline;
+    color: $branco;
+// é possível aninhar atributos que tenham o mesmo prefixo, dentro de um objeto que leva o prefixo deles.
+    font: {
+      family: Arial;
+      size: 50px;
+    }
+  }
+
+  h3 {
+    font-family: Helvetica;
+    margin: 80px 0px 80px 0px;
+  }
+
+  p {
+    color: $branco;
+    font-family: Helvetica;
+    margin: 80px 0px 80px 0px;
+  }
+
+  .text-hover{
+    color: $branco;
+// os pseudo-elementos são definidos pelo e-comercial(&) e são setados dentro da classe ou id
+    &:hover{
+      color: $amarelo;
+      border: 1px solid $branco;
+      padding: 5px;
+    }
+  }
+
+  #{$bolas}{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    #{$bola}{
+      #{$borda}: 2px solid $branco;
+      #{$borda}-radius: 200px;
+      #{$largura}: 20px;
+      #{$espaço-interno}: 100px; 
+      #{$cor-de-fundo}: $amarelo;
+    }
+  }
+}
+

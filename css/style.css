@@ -1,0 +1,49 @@
+.main-div {
+  background-color: purple;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+.main-div section {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 100px 150px 100px 150px;
+}
+.main-div h1 {
+  text-decoration: underline;
+  color: white;
+  font-family: Arial;
+  font-size: 50px;
+}
+.main-div h3 {
+  font-family: Helvetica;
+  margin: 80px 0px 80px 0px;
+}
+.main-div p {
+  color: white;
+  font-family: Helvetica;
+  margin: 80px 0px 80px 0px;
+}
+.main-div .text-hover {
+  color: white;
+}
+.main-div .text-hover:hover {
+  color: yellow;
+  border: 1px solid white;
+  padding: 5px;
+}
+.main-div .balls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-div .balls .ball, .main-div .balls .ball2, .main-div .balls .ball3 {
+  border: 2px solid white;
+  border-radius: 200px;
+  width: 20px;
+  padding: 100px;
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
